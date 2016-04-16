@@ -1,14 +1,14 @@
 "use strict";
 
-describe('Rexxar', function(){
-  var Rexxar = require('../../lib/heroes/rexxar');
+describe('Jaina', function(){
+  var Jaina = require('../../lib/heroes/jaina');
 
   it('has a hero power', function(){
-    var hero = Rexxar();
+    var hero = Jaina();
     var target = jasmine.createSpyObj('target', ['Damage']);
 
     expect(hero.Power).toBeDefined();
     hero.Power.Target(target);
-    expect(target.Damage).toHaveBeenCalledWith(2);
+    expect(target.Damage).toHaveBeenCalledWith(1);
   })
 });
